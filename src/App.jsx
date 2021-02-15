@@ -13,13 +13,6 @@ export default function App() {
       <Globales/>
       <Modal />
       <Button onClick={()=>setViewModal(true)}>Abrir Modal</Button>
-
-
-    <Div>
-      <h1>Hola Mundo</h1>
-      <p className="parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci voluptatem eius doloremque quisquam repellat laudantium optio, iure modi repellendus quasi dolorem reiciendis molestiae expedita, iusto ex dignissimos debitis? Ducimus, asperiores?</p>
-    </Div>
-
     </Context.Provider>
   );
 }
@@ -104,21 +97,4 @@ const Button = styled.button`
 &:active{
   transform: scale(1.1)
 }
-`
-
-const Div = styled.div`
-  background-color: white;
-
-  h1{
-    color: black;
-  }
-
-  .parrafo{
-    color: crimson;
-
-    &:hover{
-      color: black;
-    }
-  }
-
-`
+`;
